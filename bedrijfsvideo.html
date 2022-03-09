@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Frederic Tilleman</title>
+
+	<meta name="description" content="animaties, illustraties en grafische creaties gent">
+	<meta name="keywords" content="animaties, gent, stopmotion, stop-motion, stop motion, animatie, illustratie, grafische vormgever, grafische vormgeving, cut-out, geboortekaartje, geboortekaartjes, ontwerp, frederic tilleman">
+	<meta name="author" content="Frederic Tilleman">
+
+<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+
+	<style type="text/css">
+
+		@font-face {
+		  font-family: 'Pier Sans Light';
+		  src: url('./Fonts/PierSans-Light.otf') format('opentype');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+
+		@font-face {
+		  font-family: 'Pier Sans Bold';
+		  src: url('./Fonts/PierSans-Bold.otf') format('opentype');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+
+		@font-face {
+		  font-family: 'Pier Sans Medium';
+		  src: url('./Fonts/PierSans-Medium.otf') format('opentype');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+
+	/* styling menu */
+		.navigation {
+		  position: relative;
+		  width: 100%;
+		  text-align: center;
+		  overflow: auto;
+		  opacity: 0;
+		  -webkit-animation: fade-in 1s forwards 0.25s;
+		          animation: fade-in 1s forwards 0.25s;
+		}
+		.navigation-links {
+		  background: white;
+		  width: 100%;
+		  min-width: auto;
+		  max-width: 800px;
+		  overflow: auto;
+		  margin: 0 auto;
+		  display: flex;
+		  justify-content: space-around;
+		}
+		.nav-link-container {
+		  text-align: center;
+		  float: left;
+		}
+		.nav-link {
+		  padding: 10px 0;
+		  font-family: 'Pier Sans Medium';
+		  font-size: 16px;
+		  display: inline-block;
+		  color: #222;
+		  text-decoration: none;
+		  position: relative;
+		  transition: color 0.15s ease;
+}
+
+	/* Main Page Styles Jarom Vogel homepage*/
+		.site-container {
+		  background: white;
+		}
+		.site-title {
+		  width: 800px;
+		  max-width: 100%;
+		  height: 200px;
+		  margin: 0 auto;
+		  position: relative;
+		  background-image: url('./IMG/Header/Header_V1.gif');
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: auto 100%;
+		  top: 0;
+		  cursor: pointer;
+		  -webkit-animation: fade-in 1s forwards;
+		          animation: fade-in 1s forwards;
+		}
+		@-webkit-keyframes fade-in {
+		  0% {
+		    opacity: 0;
+		  }
+		  100% {
+		    opacity: 1;
+		  }
+		}
+		@keyframes fade-in {
+		  0% {
+		    opacity: 0;
+		  }
+		  100% {
+		    opacity: 1;
+		  }
+		}
+
+	/* styling responsive container */
+		.responsive{
+			max-width: 800px;
+		    height:100%;
+		    width:100%;
+		    margin: auto;
+		}
+	/* styling header 
+		.header{
+			text-align: right;
+			color: #3cb882;
+			font-size: 14px;
+			font-family: Libre Baskerville;
+			padding-right: 20px;
+			padding-top: 50px;
+			background-image: url(./IMG/header.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			height: 200px;
+		}	*/
+
+	/* styling doorlopende tekst */
+		.content{
+			font-family: "Pier Sans Light", sans-serif;
+			text-align: center;
+			font-size: 90%;
+			line-height: 130%;
+			color: dimgray;
+			overflow: hidden;
+		}
+		p {
+  			word-spacing: -2px;
+		}	
+
+	/* styling hyperlinks */
+			a:link {
+			  color: dimgray;
+			}
+			a:visited {
+			  color: dimgray;
+			}
+			a:hover {
+			  color: #3cb882;
+			}
+			a:active {
+			  color: #3cb882;
+			}
+			a:link {
+			  text-decoration: none;
+			}
+			a:visited {
+			  text-decoration: none;
+			}
+			a:hover {
+			  text-decoration: none;
+			}
+			a:active {
+			  text-decoration: none;
+			}
+
+	/* styling titels post */
+		h2{
+			font-size: 30px;
+			color: #3cb882;
+			font-family: Pier Sans Bold;
+			word-spacing: -3px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		
+	/* styling afbeeldingen */
+		img {
+		    max-width: 800px;
+		    max-height: 800px;
+		    height:100%;
+		    width:100%;
+		}
+		.aligncenter {
+		    text-align: center;
+		}
+		
+	/* styling voor de horizontale lijnen tussen de posts */
+		#rectangle{
+			background: #dddddd;
+			max-width: 800px;
+			width: 100%;
+			height: 7px;
+			margin: auto;
+			border: none;
+		}
+
+	/* styling vimeo video's */
+		.videoWrapper-outer {
+		    max-width: 800px;
+		}
+
+		.videoWrapper {
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 */
+			height: 0;
+		}
+
+		.videoWrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+	/* styling footer */
+		.footer-outer {
+		    max-width: 800px;
+		    max-height: 800px;
+		    height:100%;
+		    width:100%;
+		    margin: auto;
+		}
+		.footer-inner {
+			position: relative;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.copyright-info {
+		  height: 45px;
+		  padding-top: 25px;
+		}
+		.social-link {
+			position: absolute;
+  			right: 10px;
+  			top: 17px;
+			width: 36px;
+			height: 36px;
+			opacity: 0.65;
+			text-decoration: none;
+		}
+		.social-link img {
+		  width: 36px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<!-- FREDERIC TILLEMAN animatie -->
+	<div class="site-title" ng-click="$state.go('illustration')"></div>
+
+	<!-- menu -->
+	<div class="navigation">
+                <div class="navigation-links">
+                    <div class="nav-link-container">
+                        <a class="nav-link magic active-link" ui-sref="illustration" ng-class="{'active-link': $state.includes('illustration')}" href="main.html">Stop-motion</a>
+                    </div>
+                    <div class="nav-link-container">
+                        <a class="nav-link magic" ui-sref="about" ng-class="{'active-link': $state.includes('about')}" href="tvspot.html">Tv-spot</a>
+                    </div>
+                    <div class="nav-link-container">
+                        <a class="nav-link magic" ui-sref="learn" ng-class="{'active-link': $state.includes('learn')}" href="/bedrijfsvideo.html">Bedrijfsvideo</a>
+                    </div>
+                    <div class="nav-link-container">
+                        <a class="nav-link magic" href="illustratie.html">Illustratie</a>
+                    </div>
+                    <div class="nav-link-container">
+                        <a class="nav-link magic" ui-sref="prospectapp" ng-class="{'active-link': $state.includes('prospectapp')}" href="contact.html">Contact</a>
+                    </div>
+                </div>            
+            </div>
+
+	<!-- posts -->
+	<div class="content">
+		
+		<div id="rectangle"></div>
+
+		<div class="responsive">
+		<h2>Dat zit pluis</h2>
+
+			<div class="videoWrapper-outer">
+				<div class="videoWrapper">
+		 	 	<iframe allowfullscreen="" frameborder="0" mozallowfullscreen="" portrait="0&amp;byline=0" src="https://player.vimeo.com/video/383949247?title=0&amp;byline=0&amp;portrait=0" webkitallowfullscreen=""></iframe>
+		 	 </div>
+		 	</div>
+
+			<p style="padding-top: 15px; padding-bottom: 15px;">Stop-motion animatie voor <a href="https://www.etivoet.be" target="blank">Etivoet</a>.
+			<!--<p style="padding-bottom: 15px; color: #bbbbbb;">Samen met <a href="https://www.hetpeloton.be/" style="color:#bbbbbb;" target="blank">Het Peloton</a></p>-->
+		</div>
+
+		<div id="rectangle"></div>
+
+		<div class="footer-outer">
+		<div class="footer-inner">
+        	<div class="copyright-info">© Frederic Tilleman
+        	<a class="social-link" href="http://instagram.com/frederictilleman" target="blank"><img src="./Icons/instagram_icon.svg" alt="instagram"></a></div>
+        </div>
+        </div>
+
+	</div>
+
+</body>
+</html>
