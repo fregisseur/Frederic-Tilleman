@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Frederic Tilleman</title>
+
+	<meta name="description" content="animaties, illustraties en grafische creaties gent">
+	<meta name="keywords" content="animaties, gent, stopmotion, stop-motion, stop motion, animatie, illustratie, grafische vormgever, grafische vormgeving, frederic tilleman">
+	<meta name="author" content="Frederic Tilleman">
+
+<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+
+	<style type="text/css">
+
+		@font-face {
+		  font-family: 'Pier Sans Light';
+		  src: url('./Fonts/PierSans-Light.otf') format('opentype');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+
+		@font-face {
+		  font-family: 'Pier Sans Bold';
+		  src: url('./Fonts/PierSans-Bold.otf') format('opentype');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+
+	/* styling menu POGING1
+		  .floating-menu {
+		    font-family: sans-serif;
+		    background: lightgrey;
+		    text-align: left;
+		    opacity: 0.8;
+		    padding: 5px;
+		    margin: auto;
+		    width: 5em;
+		    z-index: 100px;
+		    position: fixed;
+		  }
+		  .floating-menu a, 
+		  .floating-menu h3 {
+		    font-size: 0.9em;
+		    display: block;
+		    margin: 0.5em;
+		    color: white;
+		  } */
+
+	/* Main Page Styles Jarom Vogel homepgae*/
+		.site-container {
+		  background: white;
+		}
+		.site-title {
+		  width: 800px;
+		  max-width: 100%;
+		  height: 200px;
+		  margin: 0 auto;
+		  position: relative;
+		  background-image: url('./IMG/Header/header_V1.gif');
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: auto 100%;
+		  top: 0;
+		  cursor: pointer;
+		  -webkit-animation: fade-in 1s forwards;
+		          animation: fade-in 1s forwards;
+		}
+		@-webkit-keyframes fade-in {
+		  0% {
+		    opacity: 0;
+		  }
+		  100% {
+		    opacity: 1;
+		  }
+		}
+		@keyframes fade-in {
+		  0% {
+		    opacity: 0;
+		  }
+		  100% {
+		    opacity: 1;
+		  }
+		}
+
+	/* styling responsive container */
+		.responsive{
+			max-width: 800px;
+		    height:100%;
+		    width:100%;
+		    margin: auto;
+		}
+	/* styling header 
+		.header{
+			text-align: right;
+			color: #3cb882;
+			font-size: 14px;
+			font-family: Libre Baskerville;
+			padding-right: 20px;
+			padding-top: 50px;
+			background-image: url(./IMG/header.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			height: 200px;
+		}	*/
+
+	/* styling doorlopende tekst */
+		.content{
+			font-family: "Pier Sans Light", sans-serif;
+			text-align: center;
+			font-size: 90%;
+			line-height: 130%;
+			color: dimgray;
+			overflow: hidden;
+		}
+		p {
+  			word-spacing: -2px;
+		}	
+
+	/* styling hyperlinks */
+			a:link {
+			  color: dimgray;
+			}
+			a:visited {
+			  color: dimgray;
+			}
+			a:hover {
+			  color: #3cb882;
+			}
+			a:active {
+			  color: #3cb882;
+			}
+			a:link {
+			  text-decoration: none;
+			}
+			a:visited {
+			  text-decoration: none;
+			}
+			a:hover {
+			  text-decoration: none;
+			}
+			a:active {
+			  text-decoration: none;
+			}
+
+	/* styling titels post */
+		h2{
+			font-size: 30px;
+			color: #3cb882;
+			font-family: Pier Sans Bold;
+			word-spacing: -3px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		
+	/* styling afbeeldingen */
+		img {
+		    max-width: 800px;
+		    max-height: 800px;
+		    height:100%;
+		    width:100%;
+		}
+		.aligncenter {
+		    text-align: center;
+		}
+		
+	/* styling voor de horizontale lijnen tussen de posts */
+		#rectangle{
+			background: #dddddd;
+			max-width: 800px;
+			width: 100%;
+			height: 7px;
+			margin: auto;
+			border: none;
+		}
+
+	/* styling vimeo video's */
+		.videoWrapper-outer {
+		    max-width: 800px;
+		}
+
+		.videoWrapper {
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 */
+			height: 0;
+		}
+
+		.videoWrapper iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="site-title" ng-click="$state.go('illustration')"></div>
+
+	<!--
+	<div class="responsive">
+	<div class="header">
+ 			 <h1>animaties<br />illustraties<br />grafische creaties</h1>
+	</div></div>	-->
+
+<!-- test voor menu
+	<div class="responsive">
+	<nav class="floating-menu">
+		<ul style="list-style: none;">
+			<li><a href="index.html">Animaties</a></li>
+			<li><a href="mailto:frederic.tilleman@gmail.com">Contact</a></li>
+		</ul>
+	</nav></div>	-->
+
+
+	<div class="content">
+		<div class="responsive">
+		<h2>Room with a view</h2>
+			
+			<p class="aligncenter">
+				<img src="./IMG/raamtekening.jpg"></p>
+			
+			<p style="padding-top: 15px; padding-bottom: 15px;">Raamtekeningen, ten tijde van <a href="https://www.instagram.com/quarantekening/" target="blank">@quarantekening</a>.</p>
+		</div>
+
+		<div id="rectangle"></div>
+
+		<div class="responsive">
+		<h2>Ronde van Vlaanderen</h2>
+
+			<div class="videoWrapper-outer">
+				<div class="videoWrapper">
+		 	 	<iframe allowfullscreen="" frameborder="0" mozallowfullscreen="" portrait="0&amp;byline=0" src="https://player.vimeo.com/video/211161422?title=0&amp;byline=0&amp;portrait=0" webkitallowfullscreen=""></iframe>
+		 	 </div>
+		 	</div>
+
+			<p style="padding-top: 15px;">Stop-motion reclamespot voor de Ronde van Vlaanderen.<br />Gemaakt met een miniatuur wielrenner op de beste plekjes van Antwerpen.</p>
+			<p style="padding-bottom: 15px; color: #bbbbbb;">Samen met <a href="https://www.mediamixer.be/" style="color:#bbbbbb;" target="blank">Mediamixer</a></p>
+		</div>
+
+		<div id="rectangle"></div>
+
+		<div class="responsive">
+		<h2>Creatieve workshop</h2>
+
+			<div class="videoWrapper-outer">
+				<div class="videoWrapper">
+		 	 	<iframe allowfullscreen="" frameborder="0" mozallowfullscreen="" portrait="0&amp;byline=0" src="https://player.vimeo.com/video/190617554?title=0&amp;byline=0&amp;portrait=0" webkitallowfullscreen=""></iframe>
+		 	 </div>
+		 	</div>
+
+			<p style="padding-top: 15px;">Stop-motion reclamespot voor creatieve workshops van <a href="https://www.veritas.be" target="blank">Atelier Veritas</a>.
+			<p style="padding-bottom: 15px; color: #bbbbbb;">Samen met <a href="https://www.hetpeloton.be/" style="color:#bbbbbb;" target="blank">Het Peloton</a></p>
+		</div>
+
+		<div id="rectangle"></div>
+
+		<div class="responsive">
+		<h2>B Major</h2>
+
+			<div class="videoWrapper-outer">
+				<div class="videoWrapper">
+		 	 	<iframe allowfullscreen="" frameborder="0" mozallowfullscreen="" portrait="0&amp;byline=0" src="https://player.vimeo.com/video/203809839?title=0&amp;byline=0&amp;portrait=0" webkitallowfullscreen=""></iframe>
+		 	 </div>
+		 	</div>
+
+			<p style="padding-top: 15px;">Stop-motion reclamespot voor B Major.<br />De nieuwe muziekbiënnale in Brugge.</p>
+			<p style="padding-bottom: 15px; color: #bbbbbb;">Samen met <a href="https://www.hetpeloton.be/" style="color:#bbbbbb;" target="blank">Het Peloton</a></p>
+		</div>
+
+		<div id="rectangle"></div>
+
+		<div class="responsive">
+		<h2>Moederdag</h2>
+
+			<div class="videoWrapper-outer">
+				<div class="videoWrapper">
+		 	 	<iframe allowfullscreen="" frameborder="0" mozallowfullscreen="" portrait="0&amp;byline=0" src="https://player.vimeo.com/video/413926153?title=0&amp;byline=0&amp;portrait=0" webkitallowfullscreen=""></iframe>
+		 	 </div>
+		 	</div>
+
+			<p style="padding-top: 15px;">Animatie met échte producten van <a href="https://www.vandemoortele.com/" target="blank">Vandemoortele</a>.<br />Het ideale cadeau voor moederdag.</p>
+			<p style="padding-bottom: 15px; color: #bbbbbb;">Samen met <a href="https://www.foodphoto.be/" style="color:#bbbbbb;" target="blank">Foodphoto </a><br />Muziek van <a href="https://www.bensound.com/" style="color: #bbbbbb;" target="blank"> Bensound</a></p>
+		</div>
+
+		<div id="rectangle"></div>
+
+		<div class="responsive">
+		<h2>De slimste mens ter wereld</h2>
+
+			<div class="videoWrapper-outer">
+				<div class="videoWrapper">
+		 	 	<iframe allowfullscreen="" frameborder="0" mozallowfullscreen="" portrait="0&amp;byline=0" src="https://player.vimeo.com/video/235688904?title=0&amp;byline=0&amp;portrait=0" webkitallowfullscreen=""></iframe>
+		 	 </div>
+		 	</div>
+
+			<p style="padding-top: 15px;">Stop-motion animatie met koekjes en chocolade.<br />Hierbij heb ik meermaals mijn vingers afgelikt.</p>
+			<p style="padding-bottom: 15px; color: #bbbbbb;">Gemaakt voor De Slimste Mens ter Wereld</a><br />In opdracht van <a href="https://www.woestijnvis.be/" style="color:#bbbbbb;" target="blank">Woestijnvis </a></p>
+		</div>
+
+		<div id="rectangle"></div>
+
+	</div>
+
+</body>
+</html>
