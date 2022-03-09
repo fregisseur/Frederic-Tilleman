@@ -25,25 +25,47 @@
 		  font-style: normal;
 		}
 
-	/* styling menu POGING1
-		  .floating-menu {
-		    font-family: sans-serif;
-		    background: lightgrey;
-		    text-align: left;
-		    opacity: 0.8;
-		    padding: 5px;
-		    margin: auto;
-		    width: 5em;
-		    z-index: 100px;
-		    position: fixed;
-		  }
-		  .floating-menu a, 
-		  .floating-menu h3 {
-		    font-size: 0.9em;
-		    display: block;
-		    margin: 0.5em;
-		    color: white;
-		  } */
+		@font-face {
+		  font-family: 'Pier Sans Medium';
+		  src: url('./Fonts/PierSans-Medium.otf') format('opentype');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+
+	/* styling menu */
+		.navigation {
+		  position: relative;
+		  width: 100%;
+		  text-align: center;
+		  overflow: auto;
+		  opacity: 0;
+		  -webkit-animation: fade-in 1s forwards 0.25s;
+		          animation: fade-in 1s forwards 0.25s;
+		}
+		.navigation-links {
+		  background: white;
+		  width: 100%;
+		  min-width: auto;
+		  max-width: 800px;
+		  overflow: auto;
+		  margin: 0 auto;
+		  display: flex;
+		  justify-content: space-around;
+		}
+		.nav-link-container {
+		  text-align: center;
+		  float: left;
+		}
+		.nav-link {
+		  padding: 10px 0;
+		  font-family: 'Pier Sans Medium';
+		  font-size: 16px;
+		  display: inline-block;
+		  color: #222;
+		  text-decoration: none;
+		  position: relative;
+		  transition: color 0.15s ease;
+}
 
 	/* Main Page Styles Jarom Vogel homepage*/
 		.site-container {
@@ -227,15 +249,36 @@
 
 </head>
 <body>
+	<!-- FREDERIC TILLEMAN animatie -->
 	<div class="site-title" ng-click="$state.go('illustration')"></div>
 
+	<!-- menu -->
+	<div class="navigation">
+                <div class="navigation-links">
+                    <div class="nav-link-container">
+                        <a class="nav-link magic active-link" ui-sref="illustration" ng-class="{'active-link': $state.includes('illustration')}" href="main.html">Stop-motion</a>
+                    </div>
+                    <div class="nav-link-container">
+                        <a class="nav-link magic" ui-sref="about" ng-class="{'active-link': $state.includes('about')}" href="tvspot.html">Tv-spot</a>
+                    </div>
+                    <div class="nav-link-container">
+                        <a class="nav-link magic" ui-sref="learn" ng-class="{'active-link': $state.includes('learn')}" href="/bedrijfsvideo.html">Bedrijfsvideo</a>
+                    </div>
+                    <div class="nav-link-container">
+                        <a class="nav-link magic" href="illustratie.html">Illustratie</a>
+                    </div>
+                    <div class="nav-link-container">
+                        <a class="nav-link magic" ui-sref="prospectapp" ng-class="{'active-link': $state.includes('prospectapp')}" href="contact.html">Contact</a>
+                    </div>
+                </div>            
+            </div>
 	<!--
 	<div class="responsive">
 	<div class="header">
  			 <h1>animaties<br />illustraties<br />grafische creaties</h1>
 	</div></div>	-->
 
-<!-- test voor menu
+	<!-- test voor menu
 	<div class="responsive">
 	<nav class="floating-menu">
 		<ul style="list-style: none;">
@@ -244,8 +287,11 @@
 		</ul>
 	</nav></div>	-->
 
-
+	<!-- posts -->
 	<div class="content">
+		
+		<div id="rectangle"></div>
+
 		<div class="responsive">
 		<h2>Room with a view</h2>
 			
