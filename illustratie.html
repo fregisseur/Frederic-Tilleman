@@ -256,38 +256,22 @@
 	<div class="navigation">
                 <div class="navigation-links">
                     <div class="nav-link-container">
-                        <div class="nav-link-container">
-                   	     <a class="nav-link magic" href="main.html">Stop-motion</a>
-                    </div>
-                    	<div class="nav-link-container">
-                        <a class="nav-link magic" href="tvspot.html">Tv-spot</a>
+                        <a class="nav-link magic active-link" ui-sref="stopmotion" ng-class="{'active-link': $state.includes('stopmotion')}" href="main.html">Stop-motion</a>
                     </div>
                     <div class="nav-link-container">
-                        <a class="nav-link magic" href="bedrijfsvideo.html">Bedrijfsvideo</a>
+                        <a class="nav-link magic" ui-sref="tv-spot" ng-class="{'active-link': $state.includes('tv-spot')}" href="tvspot.html">Tv-spot</a>
                     </div>
                     <div class="nav-link-container">
-                        <a class="nav-link magic" href="illustratie.html">Illustratie</a>
+                        <a class="nav-link magic" ui-sref="bedrijfsvideo" ng-class="{'active-link': $state.includes('bedrijfsvideo')}" href="/bedrijfsvideo.html">Bedrijfsvideo</a>
                     </div>
                     <div class="nav-link-container">
-                     	<div class="nav-link-container">
-                        <a class="nav-link magic" href="contact.html">Contact</a>
+                        <a class="nav-link magic active-link" ui-sref="illustratie" ng-class="{'active-link': $state.includes('illustratie')}" href="illustratie.html">Illustratie</a>
+                    </div>
+                    <div class="nav-link-container">
+                        <a class="nav-link magic" ui-sref="contact" ng-class="{'active-link': $state.includes('contact')}" href="contact.html">Contact</a>
                     </div>
                 </div>            
             </div>
-	<!--
-	<div class="responsive">
-	<div class="header">
- 			 <h1>animaties<br />illustraties<br />grafische creaties</h1>
-	</div></div>	-->
-
-	<!-- test voor menu
-	<div class="responsive">
-	<nav class="floating-menu">
-		<ul style="list-style: none;">
-			<li><a href="index.html">Animaties</a></li>
-			<li><a href="mailto:frederic.tilleman@gmail.com">Contact</a></li>
-		</ul>
-	</nav></div>	-->
 
 	<!-- posts -->
 	<div class="content">
