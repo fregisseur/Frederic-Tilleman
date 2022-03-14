@@ -200,7 +200,7 @@
 			height: 100%;
 		}
 
-	/* styling footer */
+	/* styling footer ORIGINEEL
 		.footer-outer {
 		    max-width: 800px;
 		    max-height: 800px;
@@ -230,6 +230,88 @@
 		}
 		.social-link img {
 		  width: 36px;
+		} */
+
+	/* styling footer Mat */
+		footer {
+		    width: 100%;
+		    padding: 25px 0;
+		    position: relative;
+		    left: 20px;
+		}
+
+		.footer-social {
+		    display: inline;
+		    margin: 0 0 0 20px;
+		}
+
+		.footer-social li a {
+		    display: block;
+		    text-indent: -99999px;
+		    outline: none;
+		    width: 20px;
+		    height: 20px;
+		}
+
+		.footer-social li {
+		    display: inline-block;
+		    position: relative;
+		    left: -40px;
+		    margin: 0 5px 0 0;
+		}
+
+		.footer-social li.mail a {
+		    background: url('./Icons/email_icon.png');
+		    background-size: 20px 20px;
+		    opacity: 0.65;
+		}
+
+		.footer-social li.instagram a {
+		    background: url('./Icons/instagram_icon.png');
+		    background-size: 20px 20px;
+		    opacity: 0.65;
+		}
+
+		#mobile-menu-social {
+		    position: absolute;
+		    bottom: 50px;
+		    left: 0;
+		    right: 0;
+		}
+
+		#mobile-menu-social ul {
+		    text-align: center;
+		    float: left;
+		    clear: left;
+		    position: relative;
+		    left: 50%;
+		}
+
+		#mobile-menu-social ul li {
+		    margin: 0 5px;
+		    display: block;
+		    float: left;
+		    position: relative;
+		    right: 50%;
+		    width: auto;
+		}
+
+		#mobile-menu-social ul li a {
+		    display: block;
+		    text-indent: -99999px;
+		    outline: none;
+		    width: 40px;
+		    height: 40px;
+		}
+
+		#mobile-menu-social li.mail a {
+		    background: url('img/responsive_menu_mail.png');
+		    background-size: 40px 40px;
+		}
+
+		#mobile-menu-social li.instagram a {
+		    background: url('img/responsive_menu_instagram.png');
+		    background-size: 40px 40px;
 		}
 
 	</style>
@@ -310,12 +392,27 @@
 
 		<div id="rectangle"></div>
 
-		<div class="footer-outer">
+		<!-- <div class="footer-outer">
 		<div class="footer-inner">
         	<div class="copyright-info">© Frederic Tilleman
-        	<a class="social-link" href="http://instagram.com/frederictilleman" target="blank"><img src="./Icons/instagram_icon.svg" alt="instagram"></a></div>
+        	<a class="social-link" href="mailto:frederic.tilleman@gmail.com" title="Stuur een e-mail"><img src="./Icons/email_icon.png" alt="frederic.tilleman@gmail.com"></a>
+        	<a class="social-link" href="http://instagram.com/frederictilleman" target="blank" title="Volg op Instagram"><img src="./Icons/instagram_icon.svg" alt="Instagram"></a></div>
         </div>
-        </div>
+        </div> -->
+
+        <footer class="footer">
+		    <div class="container">
+		        <div class="row">
+		            <div class="col-12">
+		                © Frederic Tilleman
+		                <ul class="footer-social">
+		                    <li class="instagram"><a href="https://www.instagram.com/frederictilleman/" target="blank" title="Volg op Instagram">Instagram</a></li>
+		                    <li class="mail"><a href="mailto:frederic.tilleman@gmail.com" title="Stuur een e-mail">frederic.tilleman@gmail.com</a></li>
+		                </ul>
+		            </div>
+		        </div>
+		    </div>
+		</footer>
 
 	</div>
 
