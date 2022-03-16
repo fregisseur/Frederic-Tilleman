@@ -1,7 +1,11 @@
 	/* styling flowtype, automatisch aanpassen van lettergroottes etc */
+			/* body {
+  			  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+			}*/
 			body {
-			 font-size: 16px;
+			  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
 			}
+
 			h1,h2,h3,h4,h5,h6,p {
 			 line-height: 1.45;
 			}
