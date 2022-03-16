@@ -63,7 +63,7 @@
 		.nav-link {
 		  padding: 10px 0;
 		  font-family: 'Pier Sans Medium';
-		  font-size: 16px;
+		  font-size: calc(12 + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
 		  display: inline-block;
 		  color: #222;
 		  text-decoration: none;
