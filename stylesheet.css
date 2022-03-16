@@ -3,7 +3,7 @@
   			  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
 			}*/
 			body {
-			  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+			  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
 			}
 
 			h1,h2,h3,h4,h5,h6,p {
@@ -63,7 +63,7 @@
 		.nav-link {
 		  padding: 10px 0;
 		  font-family: 'Pier Sans Medium';
-		  font-size: calc(12 + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
+		  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
 		  display: inline-block;
 		  color: #222;
 		  text-decoration: none;
@@ -156,7 +156,7 @@
 
 	/* styling titels post */
 		h2{
-			font-size: calc(20 + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
+			font-size: 30px;
 			color: #3cb882;
 			font-family: Pier Sans Bold;
 			word-spacing: -3px;
