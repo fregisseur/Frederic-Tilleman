@@ -12,8 +12,6 @@
 			h1 { font-size: 3em; }
 			h2 { font-size: 2em; }
 
-
-
 	/* styling tekst */
 		@font-face {
 		  font-family: 'Pier Sans Light';
@@ -63,9 +61,8 @@
 		.nav-link {
 		  padding: 10px 0;
 		  font-family: 'Pier Sans Medium';
-		  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+		  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)))!important;
 		  display: inline-block;
-		  color: #222;
 		  text-decoration: none;
 		  position: relative;
 		  transition: color 0.15s ease;
@@ -144,10 +141,10 @@
 			  color: dimgray;
 			}
 			a:hover {
-			  color: #3cb882;
+			  color: #c96567;
 			}
 			a:active {
-			  color: #3cb882;
+			  color: #c96567;
 			}
 			a:link {
 			  text-decoration: none;
@@ -165,7 +162,7 @@
 	/* styling titel pagina */
 		h1{
 			font-size: 30px;
-			color: #3cb882;
+			color: #c96567;
 			font-family: Pier Sans Bold;
 			word-spacing: -3px;
 		}
@@ -173,7 +170,7 @@
 	/* styling titels post */
 		h2{
 			font-size: 25px;
-			color: #3cb882;
+			color: #c96567;
 			font-family: Pier Sans Bold;
 			word-spacing: -3px;
 			padding-top: 15px;
