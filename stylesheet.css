@@ -9,8 +9,8 @@
 			h1,h2,h3,h4,h5,h6,p {
 			 line-height: 1.45;
 			}
-			h1 { font-size: 4em; }
-			h2 { font-size: 3em; }
+			h1 { font-size: 3em; }
+			h2 { font-size: 2em; }
 
 
 
@@ -116,6 +116,13 @@
 		    margin: auto;
 		}
 
+		.responsivecontact{
+			max-width: 400px;
+		    height:100%;
+		    width:100%;
+		    margin: auto;
+		}
+
 	/* styling doorlopende tekst */
 		.content{
 			font-family: "Pier Sans Light", sans-serif;
@@ -155,9 +162,17 @@
 			  text-decoration: none;
 			}
 
+	/* styling titel pagina */
+		h1{
+			font-size: 30px;
+			color: #3cb882;
+			font-family: Pier Sans Bold;
+			word-spacing: -3px;
+		}
+		
 	/* styling titels post */
 		h2{
-			font-size: 30px;
+			font-size: 25px;
 			color: #3cb882;
 			font-family: Pier Sans Bold;
 			word-spacing: -3px;
@@ -182,6 +197,46 @@
 			max-width: 800px;
 			width: 100%;
 			height: 7px;
+			margin: auto;
+			border: none;
+		}
+
+		#smallrectangle1{
+			background: #dddddd;
+			max-width: 180px;
+			float: center;
+			width: 100%;
+			height: 2px;
+			margin: auto;
+			border: none;
+		}
+
+		#smallrectangle2{
+			background: #dddddd;
+			max-width: 110px;
+			float: center;
+			width: 100%;
+			height: 2px;
+			margin: auto;
+			border: none;
+		}
+
+		#smallrectangle3{
+			background: #dddddd;
+			max-width: 190px;
+			float: center;
+			width: 100%;
+			height: 2px;
+			margin: auto;
+			border: none;
+		}
+
+		#smallrectangle4{
+			background: #dddddd;
+			max-width: 130px;
+			float: center;
+			width: 100%;
+			height: 2px;
 			margin: auto;
 			border: none;
 		}
