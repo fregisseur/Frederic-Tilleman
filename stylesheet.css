@@ -105,6 +105,13 @@
 		  }
 		}
 
+		/* For width 600px and smaller: */
+		@media only screen and (max-width: 600px) {
+ 		 body {
+		   background-size: auto 50%;
+		  }
+		}
+
 	/* styling responsive container */
 		.responsive{
 			max-width: 800px;
