@@ -112,8 +112,8 @@
 		  }
 		}
 
-		/* For width 600px and smaller: */
-		@media only screen and (max-width: 600px) {
+		/* For width 800px and smaller: */
+		@media only screen and (max-width: 800px) {
 		  div.site-title {
 		    background-size: auto 75%;
 		  }
@@ -154,8 +154,8 @@
   			word-spacing: -2px;
 		}
 
-	/* For width 600px and smaller: */
-		@media only screen and (max-width: 600px) {
+	/* For width 800px and smaller: */
+		@media only screen and (max-width: 800px) {
 		  div.content {
 		    font-size: 20px!important;
 		  }
