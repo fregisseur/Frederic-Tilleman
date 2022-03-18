@@ -61,14 +61,14 @@
 		.nav-link {
 		  padding: 10px 0;
 		  font-family: 'Pier Sans Medium';
-		  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)))!important;
+		  font-size: 18!important;
 		  display: inline-block;
 		  text-decoration: none;
 		  position: relative;
 		  transition: color 0.15s ease;
 }
 
-	/* Main Page Styles Jarom Vogel homepage*/
+	/* styling header */
 		.site-container {
 		  background: white;
 		}
@@ -105,10 +105,24 @@
 		  }
 		}
 
+		/* For width 700px and smaller: */
+		@media only screen and (max-width: 700px) {
+		  div.site-title {
+		    background-size: auto 85%;
+		  }
+		}
+
 		/* For width 600px and smaller: */
 		@media only screen and (max-width: 600px) {
- 		 body {
-		   background-size: auto 50%;
+		  div.site-title {
+		    background-size: auto 75%;
+		  }
+		}
+
+		/* For width 500px and smaller: */
+		@media only screen and (max-width: 500px) {
+		  div.site-title {
+		    background-size: auto 65%;
 		  }
 		}
 
@@ -140,10 +154,10 @@
   			word-spacing: -2px;
 		}
 
-		/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+	/* For width 600px and smaller: */
 		@media only screen and (max-width: 600px) {
 		  div.content {
-		    font-size: 30px!important;
+		    font-size: 20px!important;
 		  }
 		}
 
