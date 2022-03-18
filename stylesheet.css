@@ -138,7 +138,14 @@
 		}
 		p {
   			word-spacing: -2px;
-		}	
+		}
+
+		/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+		@media only screen and (max-width: 600px) {
+		  div.content {
+		    font-size: 30px!important;
+		  }
+		}
 
 	/* styling hyperlinks */
 			a:link {
@@ -332,11 +339,4 @@
 		    background: url('./Icons/instagram_icon.png');
 		    background-size: 17px 17px;
 		    opacity: 0.65;
-		}
-
-		/* If the screen size is 600px or less, set the font-size of <div> to 30px */
-		@media only screen and (max-width: 600px) {
-		  div.example {
-		    font-size: 30px!important;
-		  }
 		}
