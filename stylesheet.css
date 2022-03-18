@@ -105,23 +105,15 @@
 		  }
 		}
 
-		/* For width 700px and smaller: */
-		@media only screen and (max-width: 700px) {
-		  div.site-title {
+	/* For width 800px and smaller: */
+		@media (max-width: 800px) {
+		  .site-title {
 		    background-size: auto 85%;
 		  }
 		}
-
-		/* For width 800px and smaller: */
-		@media only screen and (max-width: 800px) {
-		  div.site-title {
-		    background-size: auto 75%;
-		  }
-		}
-
-		/* For width 500px and smaller: */
-		@media only screen and (max-width: 500px) {
-		  div.site-title {
+	/* For width 600px and smaller: */
+		@media (max-width: 600px) {
+		  .site-title {
 		    background-size: auto 65%;
 		  }
 		}
@@ -155,8 +147,8 @@
 		}
 
 	/* For width 800px and smaller: */
-		@media only screen and (max-width: 800px) {
-		  div.content {
+		@media (max-width: 600px) {
+		  .content {
 		    font-size: 20px!important;
 		  }
 		}
