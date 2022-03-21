@@ -122,14 +122,14 @@
 		@media (max-width: 800px) {
 		  .site-title {
 		    background-size: auto 85%;
-		    height: 170px;
+		    height: 130px;
 		  }
 		}
 	/* For width 600px and smaller: */
 		@media (max-width: 600px) {
 		  .site-title {
 		    background-size: auto 65%;
-		    height: 130px;
+		    height: 90px;
 		  }
 		}
 
