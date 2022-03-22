@@ -111,10 +111,10 @@
 		.dropdown-content {
 		  display: none;
 		  position: absolute;
-		  transform: translateX(-260px);
-		  background-color: #dddddd;
+		  transform: translateX(-60px);
+		  background-color: white;
 		  opacity: 90%;
-		  min-width: 580px;
+		  min-width: 180px;
 		  z-index: 1;
 		}
 
@@ -129,7 +129,7 @@
 		}
 
 	/* change color of dropdown links on hover */
-		.dropdown-content a:hover {background-color: #cccccc; color: #c96567;}
+		.dropdown-content a:hover {background-color: white; color: #c96567;}
 
 	/* show the dropdown menu on hover */
 		.dropdown:hover .dropdown-content {display: block;}
