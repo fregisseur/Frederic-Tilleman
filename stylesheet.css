@@ -55,7 +55,6 @@
 		  background-repeat: no-repeat;
 		  background-size: auto 100%;
 		  top: 0;
-		  cursor: pointer;
 		  -webkit-animation: fade-in 1s forwards;
 		          animation: fade-in 1s forwards;
 		}
@@ -74,6 +73,13 @@
 		  }
 		  100% {
 		    opacity: 1;
+		  }
+		}
+
+	/* for width 800px and smaller */
+		@media (max-width: 800px) and (min-width: 601px) {
+		  .site-title {
+		  height: 150px;
 		  }
 		}
 
@@ -129,11 +135,12 @@
 		}
 		.list-mobile {
 		  list-style-type: none;
-		  margin: 10;
+		  margin-bottom: 20px;
 		  padding: 0;
 		}
+		
 		li {
-		padding: 6px;
+		padding: 10px;
 		font-family: 'Pier Sans Medium';
 		font-size: 17px!important;
 		}
@@ -150,13 +157,6 @@
 		  	display: none;
 		  }
 		}
-
-		@media (max-width: 600px) {
-		  .nav-link {
-		  font-size: 15px!important;
-		  }
-		}
-
 
 	/* styling responsive container */
 		.responsive{
@@ -180,7 +180,7 @@
 			font-size: 90%;
 			line-height: 130%;
 			color: dimgray;
-			overflow-x: hidden;
+			overflow: hidden;
 		}
 		p {
   			word-spacing: -2px;
