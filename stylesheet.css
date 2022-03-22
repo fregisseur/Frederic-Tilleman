@@ -6,13 +6,19 @@
 			  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
 			}*/
 
-			h1,h2,h3,h4,h5,h6,p {
-			 line-height: 1.45;
-			}
-			h1 { font-size: 3em; }
-			h2 { font-size: 2em; }
-
 	/* styling tekst */
+		h1,h2,h3,p {
+		  line-height: 1.45;
+		}
+		
+		h1 {
+		  font-size: 3em;
+		}
+		
+		h2 {
+		  font-size: 2em;
+		}
+
 		@font-face {
 		  font-family: 'Pier Sans Light';
 		  src: url('./Fonts/PierSans-Light.otf') format('opentype');
@@ -32,53 +38,6 @@
 		  src: url('./Fonts/PierSans-Medium.otf') format('opentype');
 		  font-weight: normal;
 		  font-style: normal;
-		}
-
-	/* styling menu */
-		.navigation {
-		  position: relative;
-		  width: 100%;
-		  text-align: center;
-		  overflow: auto;
-		  opacity: 0;
-		  -webkit-animation: fade-in 1s forwards 0.25s;
-		          animation: fade-in 1s forwards 0.25s;
-		}
-		.navigation-links {
-		  background: white;
-		  width: 100%;
-		  min-width: auto;
-		  max-width: 800px;
-		  overflow: auto;
-		  margin: 0 auto;
-		  display: flex;
-		  justify-content: space-around;
-		}
-		.nav-link-container {
-		  text-align: center;
-		  float: left;
-		}
-		.nav-link {
-		  padding: 10px 0;
-		  font-family: 'Pier Sans Medium';
-		  font-size: 17px!important;
-		  display: inline-block;
-		  text-decoration: none;
-		  position: relative;
-		  transition: color 0.15s ease;
-}
-
-	/* For width 800px and smaller: */
-		@media (max-width: 800px) {
-		  .nav-link {
-		  font-size: 16px!important;
-		  }
-		}
-	/* For width 600px and smaller: */
-		@media (max-width: 600px) {
-		  .nav-link {
-		  font-size: 15px!important;
-		  }
 		}
 
 	/* styling header */
@@ -118,20 +77,86 @@
 		  }
 		}
 
-	/* For width 800px and smaller: */
-		@media (max-width: 800px) {
-		  .site-title {
-		    background-size: auto 85%;
-		    height: 130px;
-		  }
-		}
-	/* For width 600px and smaller: */
+	/* for width 600px and smaller */
 		@media (max-width: 600px) {
 		  .site-title {
-		    background-size: auto 65%;
-		    height: 90px;
+		    height: 100px;
 		  }
 		}
+
+	/* styling menu */
+		.navigation {
+		  position: relative;
+		  width: 100%;
+		  text-align: center;
+		  overflow: auto;
+		  opacity: 0;
+		  -webkit-animation: fade-in 1s forwards 0.25s;
+		          animation: fade-in 1s forwards 0.25s;
+		}
+		.navigation-links {
+		  background: white;
+		  width: 100%;
+		  min-width: auto;
+		  max-width: 800px;
+		  overflow: auto;
+		  margin: 0 auto;
+		  display: flex;
+		  justify-content: space-around;
+		}
+		.nav-link-container {
+		  text-align: center;
+		  float: left;
+		}
+		.nav-link {
+		  padding: 10px 0;
+		  font-family: 'Pier Sans Medium';
+		  font-size: 17px!important;
+		  display: inline-block;
+		  text-decoration: none;
+		  position: relative;
+		  transition: color 0.15s ease;
+		}
+
+		.navigation-mobile {
+		  position: relative;
+		  width: 100%;
+		  text-align: center;
+		  overflow: auto;
+		  opacity: 0;
+		  -webkit-animation: fade-in 1s forwards 0.25s;
+		          animation: fade-in 1s forwards 0.25s;
+		}
+		.list-mobile {
+		  list-style-type: none;
+		  margin: 10;
+		  padding: 0;
+		}
+		li {
+		padding: 6px;
+		font-family: 'Pier Sans Medium';
+		font-size: 17px!important;
+		}
+
+	/* for width 600px and smaller */
+		@media (max-width: 600px) {
+		  .navigation {
+		  	display: none;
+		  }
+		}
+
+		@media (min-width: 601px) {
+		  .navigation-mobile {
+		  	display: none;
+		  }
+		}
+
+		@media (max-width: 600px) {
+		  .nav-link {
+		  font-size: 15px!important;
+		  }
+		}
+
 
 	/* styling responsive container */
 		.responsive{
@@ -161,10 +186,10 @@
   			word-spacing: -2px;
 		}
 
-	/* For width 600px and smaller: */
+	/* for width 600px and smaller */
 		@media (max-width: 600px) {
 		  .content {
-		    font-size: 20px!important;
+		    font-size: 18px!important;
 		  }
 		}
 
@@ -292,39 +317,7 @@
 			height: 100%;
 		}
 
-	/* styling footer ORIGINEEL
-		.footer-outer {
-		    max-width: 800px;
-		    max-height: 800px;
-		    height:100%;
-		    width:100%;
-		    margin: auto;
-		}
-		.footer-inner {
-			position: relative;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
-		.copyright-info {
-		  height: 45px;
-		  padding-top: 25px;
-		}
-		.social-link {
-			position: absolute;
-  			right: 10px;
-  			top: 17px;
-			width: 36px;
-			height: 36px;
-			opacity: 0.65;
-			text-decoration: none;
-		}
-		.social-link img {
-		  width: 36px;
-		} */
-
-	/* styling footer Mat */
+	/* styling footer */
 		footer {
 		    max-width: 800px;
 		    max-height: 800px;
@@ -366,7 +359,7 @@
 		    opacity: 0.65;
 		}
 
-	/* For width 600px and smaller: */
+	/* for width 600px and smaller */
 		@media (max-width: 600px) {
 		  .footer-social {
 		  display: block;
