@@ -46,6 +46,20 @@
 		  font-style: normal;
 		}
 
+		@font-face {
+		  font-family: 'MazzardsoftH Bold';
+		  src: url('./Fonts/MazzardSoftH-Bold.otf') format('opentype');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+
+		@font-face {
+		  font-family: 'MazzardsoftH Semibold';
+		  src: url('./Fonts/MazzardSoftH-SemiBold.otf') format('opentype');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+
 	/* styling header */
 		.frederictilleman {
 		  max-width: 800px;
@@ -83,7 +97,7 @@
 		}
 		.nav-link {
 		  padding: 10px 0;
-		  font-family: 'Pier Sans Medium';
+		  font-family: 'MazzardsoftH Semibold';
 		  font-size: 17px!important;
 		  display: inline-block;
 		  text-decoration: none;
@@ -126,12 +140,14 @@
 	/* links inside the dropdown */
 		.dropdown-content a {
 		  padding: 12px 16px;
-		  font-family: 'Pier Sans Medium';
+		  font-family: 'MazzardsoftH Semibold';
 		  font-size: 15px!important;
 		  text-decoration: none;
 		  display: block;
 		  text-align: center;
 		}
+
+
 
 	/* change color of dropdown links on hover */
 		.dropdown-content a:hover {background-color: white; color: #c96567;}
@@ -292,18 +308,18 @@
 		h1{
 			font-size: 30px;
 			color: #c96567;
-			font-family: Pier Sans Bold;
-			word-spacing: -3px;
+			font-family: MazzardsoftH Bold;
+			word-spacing: 0px;
 		}
 		
 	/* styling titels post */
 		h2{
 			font-size: 25px;
 			color: #c96567;
-			font-family: Pier Sans Bold;
-			word-spacing: -3px;
-			padding-top: 15px;
-			padding-bottom: 15px;
+			font-family: MazzardsoftH Bold;
+			word-spacing: 0px;
+			padding-top: 5px;
+			padding-bottom: 5px;
 		}
 		
 	/* styling afbeeldingen */
@@ -395,6 +411,7 @@
 		    margin: auto;
 		    padding-top: 25px;
 		    padding-bottom: 25px;
+		    color: #cccccc;
 		}
 
 		.footer-social {
@@ -421,13 +438,13 @@
 		.footer-social li.mail a {
 		    background: url('./Icons/email_icon.png');
 		    background-size: 17px 17px;
-		    opacity: 0.65;
+		    opacity: 1;
 		}
 
 		.footer-social li.instagram a {
 		    background: url('./Icons/instagram_icon.png');
 		    background-size: 17px 17px;
-		    opacity: 0.65;
+		    opacity: 1;
 		}
 
 	/* for width 600px and smaller */
